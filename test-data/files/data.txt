@@ -1,0 +1,36 @@
+export const fileData = {
+    validFiles: {
+        pdf: {
+            name: 'test-document.pdf',
+            path: './test-data/files/test-document.pdf',
+            type: 'application/pdf',
+            size: 1024 // size in bytes
+        },
+        image: {
+            name: 'test-image.jpg',
+            path: './test-data/files/test-image.jpg',
+            type: 'image/jpeg',
+            size: 2048
+        },
+        doc: {
+            name: 'test-doc.docx',
+            path: './test-data/files/test-doc.docx',
+            type: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+            size: 3072
+        }
+    },
+    invalidFiles: {
+        tooLarge: {
+            name: 'large-file.pdf',
+            path: './test-data/files/large-file.pdf',
+            type: 'application/pdf',
+            size: 26214400 // 25MB
+        },
+        wrongType: {
+            name: 'script.js',
+            path: './test-data/files/script.js',
+            type: 'text/javascript',
+            size: 1024
+        }
+    }
+};
